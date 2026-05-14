@@ -152,6 +152,12 @@ header h1{
     4px 4px 0px #000;
 
     margin-bottom:10px;
+
+    transform:skew(-1deg);
+
+    display:inline-block;
+
+    max-width:100%;
 }
 
 /* ---------------- SUBTITULO ---------------- */
@@ -647,5 +653,46 @@ footer{
     .footer-title{
 
         font-size:1.2em;
+    }
+}
+/* ---------------- FIX TITULO MOBILE ---------------- */
+
+@media (max-width:768px){
+
+    header{
+
+        overflow:hidden;
+    }
+
+    header h1{
+
+        font-size:2.1em !important;
+
+        letter-spacing:1px !important;
+
+        line-height:1.1;
+
+        word-break:break-word;
+
+        text-align:center;
+
+        transform:none;
+
+        padding:0 10px;
+    }
+
+    .subtitulo{
+
+        padding:0 10px;
+    }
+}
+
+@media (max-width:480px){
+
+    header h1{
+
+        font-size:1.7em !important;
+
+        letter-spacing:0px !important;
     }
 }
