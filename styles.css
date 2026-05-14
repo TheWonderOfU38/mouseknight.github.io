@@ -468,3 +468,184 @@ footer{
 
     letter-spacing:1px;
 }
+/* ---------------- RESPONSIVE MOBILE ---------------- */
+
+@media (max-width: 768px){
+
+    body{
+        padding:12px;
+    }
+
+    /* HEADER */
+
+    header{
+        padding:30px 15px;
+    }
+
+    header h1{
+
+        font-size:2.3em;
+
+        letter-spacing:3px;
+
+        line-height:1.2;
+    }
+
+    .subtitulo{
+
+        font-size:1em;
+
+        margin-top:15px;
+    }
+
+    /* NAV */
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+    }
+
+    nav ul li{
+
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    nav ul li a{
+
+        width:90%;
+
+        text-align:center;
+
+        padding:14px;
+
+        font-size:.9em;
+    }
+
+    nav ul li a::after{
+
+        display:none;
+    }
+
+    /* INTRO */
+
+    .intro-screen h2{
+
+        font-size:1.8em;
+
+        text-align:center;
+
+        padding:20px;
+
+        line-height:1.4;
+    }
+
+    /* SECTIONS */
+
+    section{
+
+        padding:22px;
+
+        margin:25px 0;
+    }
+
+    section h2{
+
+        font-size:1.2em;
+
+        line-height:1.4;
+    }
+
+    article{
+
+        padding:18px;
+    }
+
+    article h3{
+
+        font-size:1em;
+    }
+
+    p,
+    li{
+
+        font-size:.95em;
+
+        line-height:1.7;
+    }
+
+    /* TABLAS */
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+    }
+
+    th,
+    td{
+
+        font-size:.9em;
+
+        padding:10px;
+    }
+
+    /* FOOTER */
+
+    footer{
+
+        padding:22px 15px;
+    }
+
+    .footer-title{
+
+        font-size:1.4em;
+
+        line-height:1.4;
+    }
+
+    .footer-sub{
+
+        font-size:.8em;
+    }
+}
+
+/* ---------------- MOBILE PEQUEÑO ---------------- */
+
+@media (max-width: 480px){
+
+    header h1{
+
+        font-size:1.8em;
+    }
+
+    .intro-screen h2{
+
+        font-size:1.4em;
+
+        letter-spacing:3px;
+    }
+
+    nav ul li a{
+
+        font-size:.8em;
+    }
+
+    section{
+
+        padding:18px;
+    }
+
+    .footer-title{
+
+        font-size:1.2em;
+    }
+}
